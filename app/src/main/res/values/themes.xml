@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema Base de la Aplicación (Modo Día) -->
+    <style name="Theme.VoidChat" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- ==================================================== -->
+        <!--     AQUÍ ESTÁ LA MAGIA: ASIGNAMOS NUESTROS COLORES     -->
+        <!-- ==================================================== -->
+
+        <!-- Color Primario de la Marca -->
+        <item name="colorPrimary">@color/cream_primary</item> <!-- El color de tu Toolbar -->
+        <item name="colorPrimaryVariant">@color/cream_primary_variant</item> <!-- El color de la barra de estado (la de arriba del todo) -->
+        <item name="colorOnPrimary">@color/white</item> <!-- Color del texto y los iconos SOBRE el color primario (ej: título de la Toolbar) -->
+
+        <!-- Color Secundario de la Marca (para botones flotantes, switches, etc.) -->
+        <item name="colorSecondary">@color/cream_accent</item>
+        <item name="colorSecondaryVariant">@color/cream_accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Color de Fondo de la aplicación -->
+        <item name="android:colorBackground">@color/background_cream</item>
+
+        <!-- Color de la Barra de Estado -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- ==================================================== -->
+    </style>
+</resources>

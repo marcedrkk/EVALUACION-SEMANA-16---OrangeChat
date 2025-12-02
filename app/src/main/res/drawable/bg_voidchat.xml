@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Capa base: Un color crema sólido y claro -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#F5F5DC"/> <!-- Beige -->
+        </shape>
+    </item>
+
+    <!-- Capa superior: Un degradado suave desde un tono más cálido -->
+    <item android:bottom="400dp"> <!-- Esta capa solo ocupa la parte superior -->
+        <shape>
+            <gradient
+                android:startColor="#FFE4B5"
+            android:endColor="@android:color/transparent"
+            android:angle="270"/>
+        </shape>
+    </item>
+
+    <!-- Capa inferior: Un degradado sutil desde la parte de abajo -->
+    <item android:top="500dp"> <!-- Esta capa solo ocupa la parte inferior -->
+        <shape>
+            <gradient
+                android:startColor="@android:color/transparent"
+                android:endColor="#D2B48C"
+            android:angle="270"/>
+        </shape>
+    </item>
+
+</layer-list>

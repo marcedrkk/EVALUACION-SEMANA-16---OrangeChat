@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_voidchat"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="24dp">
+
+
+
+    <!-- Tarjeta visual para agrupar la información -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bubble_input"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="Mi Perfil"
+            android:textColor="#5D4037"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Nombre: [Cargando...]"
+            android:textColor="#6d4c41"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textProfileEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="Email: [Cargando...]"
+            android:textColor="#a1887f"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- Botón de logout en la parte inferior de la pantalla -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="105dp"
+        android:background="@drawable/bubble_send"
+        android:text="Cerrar Sesión"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#FFCB7F" />
+
+</RelativeLayout>

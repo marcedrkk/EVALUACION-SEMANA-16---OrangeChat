@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores Base de la App (antes morados, ahora crema/elegante) -->
+    <color name="cream_primary">#D2B48C</color> <!-- Canela/Tan (para la barra principal) -->
+    <color name="cream_primary_variant">#BC8F8F</color> <!-- RosyBrown (para la barra de estado) -->
+    <color name="cream_accent">#BC8F8F</color> <!-- RosyBrown (para acentos como botones) -->
+
+    <!-- Colores de Texto -->
+    <color name="text_primary">#4D4D4D</color> <!-- Gris Oscuro -->
+    <color name="text_secondary">#8d6e63</color> <!-- Marrón claro -->
+
+    <!-- Colores Neutros y de Fondo -->
+    <color name="background_cream">#F5F5DC</color> <!-- Beige/Crema -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+</resources>

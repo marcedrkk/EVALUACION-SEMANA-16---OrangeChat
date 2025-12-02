@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Usaremos un RelativeLayout para posicionar la hora con más precisión -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:clipToPadding="false">
+
+    <!-- Contenedor de la burbuja y nombre, para aplicar el gravity (start/end) -->
+    <LinearLayout
+        android:id="@+id/message_content_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#8d6e63"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="2dp"
+            android:text="Username"/>
+
+        <TextView
+            android:id="@+id/textMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/voidchat_bubble_glow"
+            android:textColor="#4D4D4D"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:maxWidth="280dp"
+            android:text="Este es un mensaje de ejemplo."/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_content_layout"
+        android:layout_alignEnd="@id/message_content_layout"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="#bcaaa4"
+        android:textSize="10sp"
+        android:text="12:00"/>
+
+</RelativeLayout>

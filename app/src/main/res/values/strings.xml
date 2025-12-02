@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FireChat</string>
+
+    <string name="default_web_client_id">
+        614568828882-1178t86agofu7562imjqcv42uvdsqv96.apps.googleusercontent.com
+    </string>
+</resources>

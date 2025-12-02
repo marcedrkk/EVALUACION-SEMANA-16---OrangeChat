@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 1. Cambiamos el LinearLayout raíz por un RelativeLayout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_voidchat"
+    tools:context=".ContactListActivity">
+
+    <!-- 2. La Toolbar se ancla a la parte superior de la pantalla -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="#FFCB7F"
+        app:title="Contactos"
+        app:titleTextColor="@android:color/white"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- 3. El botón se ancla a la parte inferior de la pantalla -->
+    <Button
+        android:id="@+id/btnGoToProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/bubble_send"
+        android:text="Ver mi Perfil"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#FFCB7F" />
+
+    <!-- 4. El RecyclerView ocupa el espacio restante -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerContacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnGoToProfile"
+        android:layout_below="@id/toolbar_contacts"
+        android:clipToPadding="false"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp" />
+
+</RelativeLayout>

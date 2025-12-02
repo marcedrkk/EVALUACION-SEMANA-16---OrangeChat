@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Fondo blanco ligeramente transparente para que se mezcle con el fondo crema -->
+    <solid android:color="#33FFFFFF"/>
+
+    <!-- Bordes completamente redondeados para un look moderno y suave -->
+    <corners android:radius="30dp"/>
+
+    <!-- Borde en el color de acento principal para destacar el campo -->
+    <stroke
+        android:width="2dp"
+        android:color="#BC8F8F"/> <!-- RosyBrown (Rosa pálido) -->
+
+</shape>
